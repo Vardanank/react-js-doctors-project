@@ -1,0 +1,42 @@
+.headerGeneralContainer {
+  display: flex;
+  width: 100%;
+  height: 109px;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+}
+.contentContainer{
+  width: 80%;
+  height: 100%;
+  background: red;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buttonsContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: small;
+}
+
+.rightContainer{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.languageSelector{
+  position: absolute;
+  top: 0;
+  right: 10%;
+  margin-bottom: 0;
+}

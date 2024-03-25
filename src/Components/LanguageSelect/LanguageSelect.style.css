@@ -1,0 +1,10 @@
+.LanguagesMainContainer {
+    display: flex;
+    flex-direction:row ;
+    /* align-content: space-between; */
+}
+.selectedLanguage {
+    width: 29px;
+    height: 29px;
+    background-color: #56CCF2
+}
