@@ -1,0 +1,11 @@
+.buttonVisit {
+    width: 275px;
+    height: 59px;
+    border-radius: 5px;
+    border: 2px;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    /* color: #56CCF2; */
+
+}

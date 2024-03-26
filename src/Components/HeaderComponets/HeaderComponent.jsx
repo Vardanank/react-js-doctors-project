@@ -30,9 +30,7 @@ export default function HeaderComponent() {
           </div>
           
         </div>
-        <div className="doctorGeneralPhoto">
-          <img src={DoctorGeneralPhoto} />
-        </div>
+        
         <div className="languageSelector">
                 <LanguageSelect languageList={languages} onPress={onPress} selected={language}/>
           </div>

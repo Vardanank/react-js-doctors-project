@@ -1,0 +1,17 @@
+.secondContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.VirtualVisitScheduler {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blueSpan {
+    
+    color: #56CCF2;
+}
