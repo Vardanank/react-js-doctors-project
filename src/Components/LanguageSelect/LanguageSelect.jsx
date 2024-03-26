@@ -6,7 +6,7 @@ console.log(props.selected);
       {props.languageList.map((language, index) => {
         return (
           <div
-            className={props.selected ===language&&"selectedLanguage"}
+            className={props.selected ===language?"selectedLanguage":undefined}
             onClick={()=>props.onPress(language)}
             key={language + index}
           >

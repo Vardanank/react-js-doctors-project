@@ -1,7 +1,7 @@
 import "./ButtonVisit.style.css";
 
-export default function ButtonVisit({text, style}) {
+export default function ButtonVisit({text, style, onClick}) {
     return (
-        <button className="buttonVisit" style={style}>{text}</button>
+        <button onClick={onClick} className="buttonVisit" style={style} >{text}</button>
     )
 }

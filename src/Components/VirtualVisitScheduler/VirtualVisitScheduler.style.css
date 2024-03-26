@@ -1,17 +1,28 @@
 .secondContainer {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .VirtualVisitScheduler {
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
+.imageContainer{
+ width: 60%;
+}
+.doctorImage{
+    width: 100%;
+}
 .blueSpan {
-    
     color: #56CCF2;
+}
+.buttons {
+    
+    display: flex;
+    justify-content: space-around;
 }

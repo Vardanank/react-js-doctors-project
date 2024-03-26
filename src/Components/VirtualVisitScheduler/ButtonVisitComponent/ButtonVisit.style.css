@@ -2,10 +2,11 @@
     width: 275px;
     height: 59px;
     border-radius: 5px;
-    border: 2px;
-    color: inherit;
+    border-width: 2px;
+    border-color: #56CCF2;
+    /* color: inherit;
     background-color: transparent;
-    cursor: pointer;
+    cursor: pointer; */
     /* color: #56CCF2; */
-
+    cursor: pointer;
 }

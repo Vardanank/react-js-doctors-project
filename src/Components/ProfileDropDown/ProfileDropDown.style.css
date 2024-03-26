@@ -1,0 +1,23 @@
+.container {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-color:#FF9F28;
+    margin-right: 10px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: "400";
+}
+.arowDown{
+    margin-left: 10px;
+}
