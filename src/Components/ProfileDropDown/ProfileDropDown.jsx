@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { ArrowDown } from '../../Images/Svg';
 import './ProfileDropDown.style.css'
-function ProfileDropDown({name, surname, onArroDownClick, dropDownVisibility}) {
+import DropDownMenu from './DropDownMenu/DropDownMenu';
+
+function ProfileDropDown({name, surname, onArroDownClick, dropDownVisibility,dropDownData}) {
 
     return (
-        <div className="container">
+        <div className="container" >
             <div className="logo">
                 {
                     name[0].toUpperCase()
@@ -16,7 +18,7 @@ function ProfileDropDown({name, surname, onArroDownClick, dropDownVisibility}) {
             <div className="arowDown" onClick={onArroDownClick}>
                 <img src={ArrowDown}/>
             </div>
-
+            <DropDownMenu list={dropDownData} visible={dropDownVisibility} />
         </div>
       );
 }

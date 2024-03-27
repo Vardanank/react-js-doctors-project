@@ -1,0 +1,17 @@
+.containerMenu{
+    position: absolute;
+    margin-top: 40px;
+    top: 30px;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+}
+.myProfile{
+    border: 1px solid #C9C9C9;
+}
+.itemContainer{
+    border: 1px solid #C9C9C9;
+}
+
+

@@ -1,12 +1,20 @@
+import { useContext, createContext, useState } from "react";
 import "./App.css";
-import HeaderComponent from "./Components/HeaderComponets/HeaderComponent";
-import ButtonVisit from "./Components/VirtualVisitScheduler/ButtonVisitComponent/ButtonVisit";
-import VirtualVisitScheduler from "./Components/VirtualVisitScheduler/VirtualVisitScheduler";
+import translation from "./Translation/Translation";
+
+import { MainPage } from "./Pages/MainPage/MainPage";
+
+export const TranslationContext = createContext(null);
 function App() {
+  const [language, setLanguage] = useState("RU");
+  console.log(language);
   return (
     <div className="App">
-      <HeaderComponent />
-      <VirtualVisitScheduler/>
+      <TranslationContext.Provider
+        value={{ language, setLanguage, t: translation[language] }}
+      >
+        <MainPage />
+      </TranslationContext.Provider>
     </div>
   );
 }
