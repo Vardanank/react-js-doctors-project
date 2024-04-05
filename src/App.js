@@ -3,6 +3,7 @@ import "./App.css";
 import translation from "./Translation/Translation";
 
 import { MainPage } from "./Pages/MainPage/MainPage";
+import FooterGeneralContainer from "./Components/FooterComponents/FooterGeneralContainer";
 
 export const TranslationContext = createContext(null);
 function App() {
@@ -14,6 +15,7 @@ function App() {
         value={{ language, setLanguage, t: translation[language] }}
       >
         <MainPage />
+        <FooterGeneralContainer/>
       </TranslationContext.Provider>
     </div>
   );

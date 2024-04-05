@@ -6,6 +6,14 @@ import ProfileIcon from './Profile-Icon.svg'
 import CreditCardLogo from './CreditCardLogo.svg'
 import FAQLogo from './FAQLogo.svg'
 import LogoutLogo from './LogoutLogo.svg'
-
-
-export  {HeaderLogo, NotificationIcon, DoctorGeneralPhoto, ArrowDown,ProfileIcon,LogoutLogo, FAQLogo, CreditCardLogo}
+import AnimatedDoctor from'./AnimatedDoctor.svg'
+import DoctorInfo from './DoctorInfo.svg'
+import Clock from'./Clock.svg'
+import KalendarIcon from './KalendarIcon.svg'
+import MessageIcon from './MessageIcon.svg'
+import VideoCameraIcon from './MessageIcon.svg'
+import instagram from './instagram.svg'
+import facebook from './facebook.svg'
+import youtube from './youtube.svg'
+import googlPlay from './googlPlay.svg'
+export  {HeaderLogo, NotificationIcon, DoctorGeneralPhoto, ArrowDown,ProfileIcon,LogoutLogo, FAQLogo, CreditCardLogo,AnimatedDoctor, DoctorInfo, MessageIcon, KalendarIcon, VideoCameraIcon, Clock, instagram, youtube, facebook,  googlPlay}

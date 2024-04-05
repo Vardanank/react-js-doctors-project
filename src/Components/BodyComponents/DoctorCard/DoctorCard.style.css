@@ -1,0 +1,21 @@
+.doctorCard {
+    width: 1160px;
+    height: 193px;
+    background-color: aquamarine;
+    margin: 40px auto 0;
+    }
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.meetingInfoContainer{
+    display: flex;
+    flex-direction: row;
+    
+}
+.meetingInfoItem{
+display: flex;
+flex-direction: row;
+}
