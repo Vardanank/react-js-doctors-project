@@ -8,7 +8,6 @@ import RecordComponent from "../../Components/BodyComponents/RecordComponent/Rec
 export function MainPage() {
   return (
     <>
-      <HeaderComponent />
       <VirtualVisitScheduler />
       <ApponimentDoctor />
       <VisitsButton/>

@@ -16,4 +16,5 @@ import instagram from './instagram.svg'
 import facebook from './facebook.svg'
 import youtube from './youtube.svg'
 import googlPlay from './googlPlay.svg'
-export  {HeaderLogo, NotificationIcon, DoctorGeneralPhoto, ArrowDown,ProfileIcon,LogoutLogo, FAQLogo, CreditCardLogo,AnimatedDoctor, DoctorInfo, MessageIcon, KalendarIcon, VideoCameraIcon, Clock, instagram, youtube, facebook,  googlPlay}
+import AlloDocWhite from './AlloDocWhite.svg'
+export  {HeaderLogo, NotificationIcon, DoctorGeneralPhoto, ArrowDown,ProfileIcon,LogoutLogo, FAQLogo, CreditCardLogo,AnimatedDoctor, DoctorInfo, MessageIcon, KalendarIcon, VideoCameraIcon, Clock, instagram, youtube, facebook,  googlPlay, AlloDocWhite}

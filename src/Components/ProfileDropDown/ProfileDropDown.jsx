@@ -4,7 +4,6 @@ import './ProfileDropDown.style.css'
 import DropDownMenu from './DropDownMenu/DropDownMenu';
 
 function ProfileDropDown({name, surname, onArroDownClick, dropDownVisibility,dropDownData}) {
-
     return (
         <div className="container" >
             <div className="logo">

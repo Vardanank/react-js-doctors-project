@@ -1,12 +1,16 @@
 import "./VirtualVisitScheduler.style.css";
 import { DoctorGeneralPhoto } from "../../Images/Svg";
 import ButtonVisit from "./ButtonVisitComponent/ButtonVisit";
+import { useContext } from "react";
+import { TranslationContext } from "../../App";
 
 export default function VirtualVisitScheduler() {
+  const {t} = useContext(TranslationContext)
+  
   return (
     <div className="secondContainer">
       <div className="VirtualVisitScheduler">
-        <h1>Онлайн консультации от врачей специалистов 24/7</h1>
+    <h1>{t.consultatin}</h1>
         <h3>
           Проконсультируйтесь сейчас или по предварительной записи со своего
           компьютера или c помощью нашего приложения, доступного в{" "}

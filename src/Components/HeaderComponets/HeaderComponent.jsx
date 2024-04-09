@@ -12,10 +12,12 @@ import LanguageSelect from "../LanguageSelect/LanguageSelect";
 import { useCallback, useContext, useState } from "react";
 import ProfileDropDown from "../ProfileDropDown/ProfileDropDown";
 import { TranslationContext } from "../../App";
+import { Link } from "react-router-dom";
 
 export default function HeaderComponent() {
   const {language, setLanguage,t} = useContext(TranslationContext)
   const [visible, setVisible] = useState(false);
+  const me = {id:25}
   const languages = ["RU", "EN"];
   const dropDownList = [
     { title: t.howToUse, icon: ProfileIcon },
@@ -42,7 +44,7 @@ export default function HeaderComponent() {
               <span className="buttonText">Мои записи</span>
             </div>
             <div className="buttonContainer">
-              <span className="buttonText">Записаться к врачу</span>
+              <Link className="buttonText" to={`/balance/${me.id}`}>Записаться к врачу</Link>
             </div>
             <img src={NotificationIcon} />
           </div>
