@@ -9,24 +9,30 @@ import {
   LogoutLogo
 } from "../../Images/Svg";
 import LanguageSelect from "../LanguageSelect/LanguageSelect";
-import { useCallback, useContext, useState } from "react";
+import { useCallback, useState } from "react";
 import ProfileDropDown from "../ProfileDropDown/ProfileDropDown";
-import { TranslationContext } from "../../App";
+// import { TranslationContext } from "../../App";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import i18n from "../../Services/i18n";
+
 
 export default function HeaderComponent() {
-  const {language, setLanguage,t} = useContext(TranslationContext)
+  const{t} = useTranslation();
+  // const {language, setLanguage,t} = useContext(TranslationContext)
   const [visible, setVisible] = useState(false);
+  const [language, setLanguage] = useState("ru");
   const me = {id:25}
-  const languages = ["RU", "EN"];
+  const languages = ["ru", "en"];
   const dropDownList = [
-    { title: t.howToUse, icon: ProfileIcon },
+    { title: t('z'), icon: ProfileIcon },
     { title: "Пополнить баланс", icon: CreditCardLogo },
     { title: "FAQ", icon: FAQLogo },
     { title: "Выйти", icon: LogoutLogo },
   ];
   const onPress = useCallback((language) => {
     setLanguage(language);
+    i18n.changeLanguage(language)
   }, []);
   const dropDown = useCallback(() => {
     setVisible((prev) => !prev);
@@ -38,7 +44,7 @@ export default function HeaderComponent() {
         <div className="rightContainer">
           <div className="buttonsContainer">
             <div className="buttonContainer">
-              <span className="buttonText">{t.howToUse}</span>
+              <span className="buttonText">{t("howToUse")}</span>
             </div>
             <div className="buttonContainer">
               <span className="buttonText">Мои записи</span>

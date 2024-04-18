@@ -1,8 +1,6 @@
 import React from "react";
-import { useContext, createContext, useState } from "react";
 import "./App.css";
 import HeaderComponent from "./Components/HeaderComponets/HeaderComponent";
-import translation from "./Translation/Translation";
 import { MainPage } from "./Pages/MainPage/MainPage";
 import Balance from "./Pages/Balance/Balance";
 import DoctorProfile from "./Pages/DoctorProfile/DoctorProfile";
@@ -11,18 +9,10 @@ import NotFound from "./Pages/NotFound/NotFound";
 import FooterGeneralContainer from "./Components/FooterComponents/FooterGeneralContainer";
 import { Routes, Route } from "react-router-dom";
 
- export const TranslationContext = createContext();
- 
 function App() {
-  const [language, setLanguage] = useState("RU");
-  const languageContextDefaultValue = {
-    language,
-    setLanguage,
-    t: translation[language],
-  };
   return (
     <div className="App">
-      <TranslationContext.Provider value={languageContextDefaultValue}>
+      
         <HeaderComponent />
         <Routes>
           <Route path="/" element={<MainPage />} />
@@ -33,7 +23,7 @@ function App() {
         </Routes>
 
         <FooterGeneralContainer />
-      </TranslationContext.Provider>
+
     </div>
   );
 }
